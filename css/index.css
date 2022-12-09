@@ -1,3 +1,13 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --light-grey-color: #ccc;
+  --lighter-grey-color: #ddd;
+  --main-transition-duration: 0.3s;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,21 +20,19 @@ body {
 }
 ul {
   list-style: none;
-  margin: 0px;
   padding: 0px;
 }
 a {
   text-decoration: none;
 }
-
 .page {
   background-color: #f1f5f9;
   min-height: 100vh;
 }
-/* sidebar */
+/*start sidebar*/
 .sidebar {
   width: 250px;
-  box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px var(--lighter-grey-color);
 }
 .sidebar-title {
   margin-bottom: 50px;
@@ -59,7 +67,7 @@ a {
 
 @media (max-width: 767px) {
   .sidebar {
-    width: 62px;
+    width: 58px;
     padding: 10px;
   }
   .sidebar-title {
@@ -70,3 +78,47 @@ a {
     justify-content: center;
   }
 }
+/*end sidebar*/
+/*start navbar*/
+nav .search::before {
+  font-family: var(--fa-style-family-classic);
+  content: '\f002';
+  font-weight: 900;
+  left: 15px;
+  bottom: 50%;
+  position: absolute;
+  transform: translateY(50%);
+  font-size: 14px;
+  color: var(--grey-color);
+}
+nav .search input {
+  width: 160px;
+  transition: width var(--main-transition-duration);
+}
+/*TODO:// vertical align the placeholder*/
+nav .search input::placeholder {
+}
+nav .search input:focus {
+  outline: 1px solid var(--lighter-grey-color);
+  width: 200px;
+}
+nav .search input:focus::placeholder {
+  opacity: 0;
+}
+nav .icons i::after {
+  content: attr(notifications);
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: -15px;
+  right: -6px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 2px solid white;
+}
+/*end navbar*/

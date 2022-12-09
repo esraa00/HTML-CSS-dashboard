@@ -1,9 +1,23 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --light-grey-color: #ccc;
+}
 /*start padding and margin*/
 .p-10 {
   padding: 10px;
 }
 .p-20 {
   padding: 20px;
+}
+.p-15 {
+  padding: 15px;
+}
+.pl-30 {
+  padding-left: 30px;
 }
 .m-0 {
   margin: 0px;
@@ -14,8 +28,14 @@
 .mb-5 {
   margin-bottom: 5px;
 }
+.ml-5 {
+  margin-left: 5px;
+}
 .ml-10 {
   margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
 }
 /*end padding and margin*/
 
@@ -41,11 +61,35 @@
 .fs-14 {
   font-size: 14px;
 }
+.fs-13 {
+  font-size: 13px;
+}
+.justify-between {
+  justify-content: space-between;
+}
 /*end font*/
+
+/*start width*/
+.width-35 {
+  width: 35px;
+}
+.full-width {
+  width: 100%;
+}
+/*end width*/
 
 /*start border*/
 .rad-6 {
   border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+}
+.border-grey {
+  border: 1px solid var(--light-grey-color);
+}
+.border-none {
+  border: none;
 }
 /*end border*/
 
@@ -56,16 +100,27 @@
 .c-black {
   color: black;
 }
+.c-ccc {
+  color: #ccc;
+}
 /*end color and background*/
 /*start transition*/
-.transition {
+.trans {
   transition: 0.3s;
 }
 /*end transition*/
 
-/*display none on mobile media*/
+/*start display none on mobile media*/
 @media (max-width: 767px) {
   .hide-mobile {
     display: none;
   }
 }
+/*end display none on mobile media*/
+/*start component*/
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*end component*/
