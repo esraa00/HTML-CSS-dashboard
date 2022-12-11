@@ -302,6 +302,9 @@
 .flex-1 {
   flex: 1;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .d-block {
   display: block;
 }
@@ -325,6 +328,33 @@
 }
 .fs-16 {
   font-size: 16px;
+}
+.fs-17 {
+  font-size: 17px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-19 {
+  font-size: 19px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-21 {
+  font-size: 21px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-23 {
+  font-size: 23px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-25 {
+  font-size: 25px;
 }
 .fs-bold {
   font-weight: bold;
@@ -450,6 +480,9 @@
 }
 .c-green {
   color: var(--green-color);
+}
+.c-red {
+  color: var(--red-color);
 }
 /*end color and background*/
 /*start transition*/

@@ -197,3 +197,12 @@ nav .icons i::after {
 .yearly-target .team-progress::before {
   border-top-color: var(--green-color);
 }
+
+.tickets-statistics .box {
+  width: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+  .tickets-statistics .box {
+    width: 100%;
+  }
+}
