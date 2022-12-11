@@ -11,6 +11,12 @@
 .hide-overflow {
   overflow: hidden;
 }
+.resize-none {
+  resize: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 /*mix*/
 /*start padding and margin*/
 .p-0 {
@@ -325,6 +331,9 @@
 .height-64 {
   height: 64px;
 }
+.height-160 {
+  height: 160px;
+}
 .width-200 {
   width: 200px;
 }
@@ -369,8 +378,8 @@
 .bg-white {
   background-color: white;
 }
-.bg-eee {
-  background-color: #eee;
+.bg-lightest-grey {
+  background-color: var(--lightest-grey-color);
 }
 .bg-blue-color {
   background-color: var(--blue-color);
@@ -406,13 +415,19 @@
   .reset-left-mobile {
     left: 0px;
   }
+  .ta-center-mobile {
+    text-align: center;
+  }
 }
-
 /*end display none on mobile media*/
 /*start component*/
 .between-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.btn {
+  padding: 4px 10px;
+  border-radius: 6px;
 }
 /*end component*/

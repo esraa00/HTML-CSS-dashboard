@@ -120,8 +120,11 @@
         <h1 class="relative main-title ml-20 mt-20 mb-40 mr-20">Dashboard</h1>
         <!-- end main title -->
         <div class="wrapper d-grid mt-0 mr-20 ml-20 mb-15 gap-20">
-          <div class="welcome box bg-white rad-10 relative hide-overflow">
-            <div class="header bg-eee d-flex justify-between p-20 pb-10">
+          <!--start welcome card-->
+          <div
+            class="welcome bg-white rad-10 relative hide-overflow ta-center-mobile"
+          >
+            <div class="bg-lightest-grey d-flex justify-between p-20 pb-10">
               <div>
                 <h2 class="mb-5">Welcome</h2>
                 <span class="c-grey">Esraa</span>
@@ -152,10 +155,33 @@
             </div>
             <a
               href="profile.html"
-              class="d-block width-fit pt-5 pb-5 pl-10 pr-10 fs-14 c-white bg-blue-color rad-6 profile-link ml-auto mr-15 mb-15 trans"
+              class="d-block width-fit btn fs-14 c-white bg-blue-color profile-link ml-auto mr-15 mb-15 trans"
               >Profile</a
             >
           </div>
+          <!--end welcome card-->
+          <!--start quick draft card-->
+          <div class="quick-draft bg-white rad-10 hide-overflow p-20">
+            <h2 class="mb-10 mt-0">Quick Draft</h2>
+            <span class="c-grey fs-15">Write A Draft For Your Ideas</span>
+            <form class="d-flex flex-dir-col gap-20 mt-20" action="">
+              <input
+                type="text"
+                placeholder="Title"
+                class="rad-6 border-none bg-lightest-grey p-10"
+              />
+              <textarea
+                class="rad-6 border-none bg-lightest-grey height-160 p-10 resize-none"
+                placeholder="Your Thoughts"
+              ></textarea>
+              <input
+                type="submit"
+                value="Save"
+                class="save cursor-pointer width-fit bg-blue-color border-none btn c-white fs-14 ml-auto trans"
+              />
+            </form>
+          </div>
+          <!--end quick draft card-->
         </div>
       </div>
     </div>

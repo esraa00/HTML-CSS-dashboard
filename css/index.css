@@ -174,3 +174,7 @@ nav .icons i::after {
 .welcome .profile-link:hover {
   background-color: var(--blue-alt-color);
 }
+
+.quick-draft .save:hover {
+  background-color: var(--blue-alt-color);
+}
