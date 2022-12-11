@@ -1,8 +1,12 @@
 :root {
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
+  --blue-color-light: #cce3ff;
   --orange-color: #f59e0b;
+  --orange-color-light: #fdecce;
   --red-color: #f44336;
+  --green-color: #22c55e;
+  --green-color-light: #d3f3df;
   --grey-color: #888;
   --light-grey-color: #ccc;
   --lightest-grey-color: #eee;
@@ -222,6 +226,9 @@
 .right-15 {
   right: 15px;
 }
+.right-17-neg {
+  right: -17px;
+}
 .right-20 {
   right: 20px;
 }
@@ -259,11 +266,17 @@
 /*end left and right*/
 
 /*start flex*/
-.gap-20 {
-  gap: 20px;
+.gap-5 {
+  gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
 }
 .gap-15 {
   gap: 15px;
+}
+.gap-20 {
+  gap: 20px;
 }
 .d-grid {
   display: grid;
@@ -286,6 +299,9 @@
 .justify-around {
   justify-content: space-around;
 }
+.flex-1 {
+  flex: 1;
+}
 .d-block {
   display: block;
 }
@@ -294,6 +310,9 @@
 /*start font*/
 .ta-center {
   text-align: center;
+}
+.fs-12 {
+  font-size: 12px;
 }
 .fs-13 {
   font-size: 13px;
@@ -307,23 +326,35 @@
 .fs-16 {
   font-size: 16px;
 }
+.fs-bold {
+  font-weight: bold;
+}
 /*end font*/
 
 /*start width*/
 .width-15 {
-  width: 200px;
+  width: 15px;
 }
 .width-35 {
   width: 35px;
 }
-.width-64 {
-  width: 64px;
-}
 .width-60 {
   width: 60px;
 }
+.width-64 {
+  width: 64px;
+}
+.width-80 {
+  width: 80px;
+}
+.width-200 {
+  width: 200px;
+}
 .width-fit {
   width: fit-content;
+}
+.height-5 {
+  height: 5px;
 }
 .height-60 {
   height: 60px;
@@ -331,11 +362,11 @@
 .height-64 {
   height: 64px;
 }
+.height-80 {
+  height: 80px;
+}
 .height-160 {
   height: 160px;
-}
-.width-200 {
-  width: 200px;
 }
 .full-width {
   width: 100%;
@@ -384,6 +415,21 @@
 .bg-blue-color {
   background-color: var(--blue-color);
 }
+.bg-blue-color-light {
+  background-color: var(--blue-color-light);
+}
+.bg-orange-color {
+  background-color: var(--orange-color);
+}
+.bg-orange-color-light {
+  background-color: var(--orange-color-light);
+}
+.bg-green-color {
+  background-color: var(--green-color);
+}
+.bg-green-color-light {
+  background-color: var(--green-color-light);
+}
 .c-black {
   color: black;
 }
@@ -395,6 +441,15 @@
 }
 .c-white {
   color: white;
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
 }
 /*end color and background*/
 /*start transition*/
@@ -425,6 +480,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn {
   padding: 4px 10px;

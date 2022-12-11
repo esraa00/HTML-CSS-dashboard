@@ -1,7 +1,9 @@
 :root {
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
+  --blue-color-light: #cce3ff;
   --orange-color: #f59e0b;
+  --orange-color-light: #fdecce;
   --red-color: #f44336;
   --grey-color: #888;
   --light-grey-color: #ccc;
@@ -174,7 +176,24 @@ nav .icons i::after {
 .welcome .profile-link:hover {
   background-color: var(--blue-alt-color);
 }
-
 .quick-draft .save:hover {
-  background-color: var(--blue-alt-color);
+  background-color: var(--blue-color);
+}
+.yearly-target .progress-bar::before {
+  content: '';
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+  bottom: 5px;
+  right: -5px;
+}
+.yearly-target .money-progress::before {
+  border-top-color: var(--blue-color);
+}
+.yearly-target .project-progress::before {
+  border-top-color: var(--orange-color);
+}
+.yearly-target .team-progress::before {
+  border-top-color: var(--green-color);
 }
