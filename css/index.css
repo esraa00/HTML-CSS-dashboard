@@ -22,6 +22,7 @@ body {
 }
 ul {
   list-style: none;
+  margin: 0;
   padding: 0px;
 }
 ::-webkit-scrollbar {
@@ -226,3 +227,43 @@ nav .icons i::after {
   color: var(--red-color);
 }
 /*start latest tasks*/
+/*start last project*/
+.last-project img {
+  opacity: 0.2;
+}
+.last-project ul::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  transform: translateX(50%);
+  background-color: var(--blue-color);
+  left: 10px;
+  width: 2px;
+}
+.last-project li::before {
+  content: '';
+  min-width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  z-index: 1;
+  margin-right: 15px;
+}
+.last-project li.done::before {
+  background-color: var(--blue-color);
+}
+.last-project li.current:before {
+  animation: on-and-off 0.8s infinite alternate;
+}
+/*end last project*/
+
+@keyframes on-and-off {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
