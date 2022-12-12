@@ -167,6 +167,9 @@
 .mb-20 {
   margin-bottom: 20px;
 }
+.mb-30 {
+  margin-bottom: 30px;
+}
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -377,11 +380,17 @@
 .width-80 {
   width: 80px;
 }
+.width-100 {
+  width: 100px;
+}
 .width-200 {
   width: 200px;
 }
 .width-fit {
   width: fit-content;
+}
+.height-fit {
+  height: fit-content;
 }
 .height-5 {
   height: 5px;
