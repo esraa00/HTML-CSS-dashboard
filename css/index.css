@@ -206,3 +206,23 @@ nav .icons i::after {
     width: 100%;
   }
 }
+
+/*start latest tasks*/
+.latest-tasks .delete-icon:hover {
+  color: var(--red-color);
+  cursor: pointer;
+}
+.latest-tasks .done {
+  opacity: 0.3;
+}
+.latest-tasks .done h3,
+.latest-tasks .done p {
+  text-decoration: line-through;
+}
+.latest-tasks .done .delete-icon {
+  color: var(--light-grey-color);
+}
+.latest-tasks .done .delete-icon:hover {
+  color: var(--red-color);
+}
+/*start latest tasks*/
