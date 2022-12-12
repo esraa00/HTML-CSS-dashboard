@@ -291,6 +291,12 @@ nav .icons i::after {
   border-left: 2px solid var(--red-color);
 }
 /*end reminder*/
+/*start latest post*/
+.latest-post .post-content {
+  line-height: 1.8;
+  min-height: 140px;
+}
+/*end latest post*/
 
 @keyframes on-and-off {
   from {
