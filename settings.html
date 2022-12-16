@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts for open sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- normalize css styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- framework -->
+    <link rel="stylesheet" href="./css/framework.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar p-20 bg-white relative">
+        <h3 class="sidebar-title ta-center mt-0 relative">Esraa</h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="d-flex ai-center fs-14 p-10 c-black rad-6 transition mb-5"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="ml-10 hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="active d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="ml-10 hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="ml-10 hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="ml-10 hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="ml-10 hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-solid fa-user-group fa-fw"></i>
+              <span class="ml-10 hide-mobile">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="ml-10 hide-mobile">Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="ml-10 hide-mobile">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content full-width mb-20">
+        <!--start heading-->
+        <nav class="bg-white between-flex p-15">
+          <div class="search relative">
+            <input
+              class="border-grey rad-10 ml-5 p-10 pl-30 fs-13"
+              placeholder="Type A Keyword"
+              type="search"
+            />
+          </div>
+          <div class="icons d-flex ai-center">
+            <i class="fa-regular fa-bell fa-xl relative" notifications="3"></i>
+            <img src="./images/avatar.png" class="width-35 ml-15" alt="" />
+          </div>
+        </nav>
+        <!--end heading-->
+        <!-- start  main title -->
+        <h1 class="relative main-title ml-20 mt-20 mb-40 mr-20">Settings</h1>
+        <!-- end main title -->
+        <!--start settings wrapper -->
+        <div class="settings-wrapper m-20 d-grid gap-20">
+          <!--start site control-->
+          <section class="site-control bg-white rad-10 p-20">
+            <h2 class="mb-10">Site Control</h2>
+            <span class="c-grey fs-15 d-block mb-20"
+              >Control The Website If There Is Maintenance
+            </span>
+            <div class="between-flex mb-15">
+              <div>
+                <span class="d-block mb-5">Website Control</span>
+                <span class="fs-13 c-grey"
+                  >Open/Close website and type the reason</span
+                >
+              </div>
+              <div>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <textarea
+              class="resize-none full-width border-grey rad-6 height-160 p-10"
+              placeholder="close message content"
+            ></textarea>
+          </section>
+          <!--end site control-->
+        </div>
+        <!--end settings wrapper -->
+      </div>
+    </div>
+  </body>
+</html>
