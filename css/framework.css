@@ -617,6 +617,7 @@
 .toggle-checkbox {
   appearance: none;
   -webkit-appearance: none;
+  display: none;
 }
 .toggle-switch {
   background-color: var(--light-grey-color);
