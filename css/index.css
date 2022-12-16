@@ -44,7 +44,9 @@ a {
   background-color: #f1f5f9;
   min-height: 100vh;
 }
-
+.content {
+  overflow: hidden;
+}
 /* start main title component*/
 .main-title::before {
   content: '';
@@ -305,6 +307,38 @@ nav .icons i::after {
   transform: rotate(5deg);
 }
 /*end social media*/
+/*start projects*/
+.projects .responsive-table {
+  overflow-x: auto;
+}
+.projects .responsive-table table {
+  min-width: 950px;
+  border-collapse: collapse;
+}
+.projects table tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.projects table th {
+  text-align: left;
+  padding: 15px;
+}
+.projects table td {
+  padding: 15px;
+  border: 1px solid var(--lightest-grey-color);
+  transition: var(--main-transition-duration);
+}
+.projects .team img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.projects .team img:not(:first-child) {
+  margin-left: -20px;
+  right: 20px;
+}
+/*end projects*/
 
 @keyframes on-and-off {
   from {

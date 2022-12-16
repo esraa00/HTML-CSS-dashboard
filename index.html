@@ -100,7 +100,7 @@
           </li>
         </ul>
       </div>
-      <div class="content full-width">
+      <div class="content full-width mb-20">
         <!--start heading-->
         <nav class="bg-white between-flex p-15">
           <div class="search relative">
@@ -119,7 +119,7 @@
         <!-- start  main title -->
         <h1 class="relative main-title ml-20 mt-20 mb-40 mr-20">Dashboard</h1>
         <!-- end main title -->
-        <div class="wrapper d-grid mt-0 mr-20 ml-20 mb-15 gap-20">
+        <div class="wrapper d-grid mt-0 mr-20 ml-20 mb-20 gap-20">
           <!--start welcome card-->
           <section
             class="welcome bg-white rad-10 relative hide-overflow ta-center-mobile"
@@ -629,36 +629,126 @@
               </div>
             </div>
           </section>
-          <section
-            class="projects bg-white p-20 rad-10"
-            style="grid-column: 1 / -1"
-          >
-            <table style="width: 100%">
-              <thead>
-                <th>Name</th>
-                <th>Finish Date</th>
-                <th>Client</th>
-                <th>Price</th>
-                <th>Team</th>
-                <th>Status</th>
+        </div>
+        <section class="projects bg-white p-20 rad-10 m-20">
+          <h2 class="mb-25">Projects</h2>
+          <div class="responsive-table">
+            <table class="fs-15 full-width">
+              <thead class="bg-lightest-grey">
+                <tr>
+                  <th>Name</th>
+                  <th>Finish Date</th>
+                  <th>Client</th>
+                  <th>Price</th>
+                  <th>Team</th>
+                  <th>Status</th>
+                </tr>
               </thead>
               <tbody>
-                <tr></tr>
-                <td>Ministry Wikipedia</td>
-                <td>10 May 2022</td>
-                <td>Ministry</td>
-                <td>$5300</td>
-                <td>
-                  <img src="./images/avatar.png" height="30px" />
-                  <img src="./images/avatar.png" height="30px" />
-                  <img src="./images/avatar.png" height="30px" />
-                  <img src="./images/avatar.png" height="30px" />
-                </td>
-                <td>Pending</td>
+                <tr>
+                  <td>Ministry Wikipedia</td>
+                  <td>10 May 2022</td>
+                  <td>Ministry</td>
+                  <td>$5300</td>
+                  <td class="team">
+                    <img src="./images/team-01.png" />
+                    <img src="./images/team-02.png" />
+                    <img src="./images/team-03.png" />
+                    <img src="./images/team-05.png" />
+                  </td>
+                  <td class="status-cell">
+                    <span class="bg-orange-color btn c-white fs-13"
+                      >Pending</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Elzero Shop</td>
+                  <td>12 Oct 2021</td>
+                  <td>Elzero Company</td>
+                  <td>$1500</td>
+                  <td class="team">
+                    <img src="./images/team-01.png" />
+                    <img src="./images/team-02.png" />
+                    <img src="./images/team-03.png" />
+                    <img src="./images/team-05.png" />
+                  </td>
+                  <td class="status-cell">
+                    <span class="in-progress btn c-white fs-13"
+                      >In Progress</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bouba App</td>
+                  <td>05 Sep 2021</td>
+                  <td>Bouba</td>
+                  <td>$800</td>
+                  <td class="team">
+                    <img src="./images/team-01.png" />
+                    <img src="./images/team-02.png" />
+                    <img src="./images/team-03.png" />
+                    <img src="./images/team-05.png" />
+                  </td>
+                  <td class="status-cell">
+                    <span class="bg-green-color btn c-white fs-13"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mahmoud Website</td>
+                  <td>22 May 2021</td>
+                  <td>Mahmoud</td>
+                  <td>$600</td>
+                  <td class="team">
+                    <img src="./images/team-01.png" />
+                    <img src="./images/team-02.png" />
+                    <img src="./images/team-03.png" />
+                    <img src="./images/team-05.png" />
+                  </td>
+                  <td class="status-cell">
+                    <span class="bg-green-color btn c-white fs-13"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sayed Website</td>
+                  <td>24 May 2021</td>
+                  <td>Sayed</td>
+                  <td>$300</td>
+                  <td class="team">
+                    <img src="./images/team-01.png" />
+                    <img src="./images/team-02.png" />
+                    <img src="./images/team-03.png" />
+                    <img src="./images/team-05.png" />
+                  </td>
+                  <td class="status-cell">
+                    <span class="bg-red btn c-white fs-13">Rejected</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Arena Application</td>
+                  <td>01 Mar 2021</td>
+                  <td>Arena Company</td>
+                  <td>$2600</td>
+                  <td class="team">
+                    <img src="./images/team-01.png" />
+                    <img src="./images/team-02.png" />
+                    <img src="./images/team-03.png" />
+                    <img src="./images/team-05.png" />
+                  </td>
+                  <td class="status-cell">
+                    <span class="bg-green-color btn c-white fs-13"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
               </tbody>
             </table>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   </body>

@@ -490,6 +490,9 @@
 .bg-white {
   background-color: white;
 }
+.bg-red {
+  background-color: var(--red-color);
+}
 .bg-lightest-grey {
   background-color: var(--lightest-grey-color);
 }
