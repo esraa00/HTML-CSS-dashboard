@@ -10,6 +10,14 @@
   --grey-color: #888;
   --light-grey-color: #ccc;
   --lightest-grey-color: #eee;
+  --twitter-color: #1da1f2;
+  --twitter-color-light: rgb(29 161 242 / 20%);
+  --facebook-color: #1877f2;
+  --facebook-color-light: rgb(24 118 242 / 20%);
+  --youtube-color: #ff0000;
+  --youtube-color-light: rgb(255 0 0 / 20%);
+  --linked-in-color: #0077b5;
+  --linked-in-color-light: rgb(0 119 181 / 20%);
 }
 /*mix*/
 .hide-overflow {
@@ -173,6 +181,9 @@
 .mb-20 {
   margin-bottom: 20px;
 }
+.mb-25 {
+  margin-bottom: 25px;
+}
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -287,6 +298,9 @@
 .gap-20 {
   gap: 20px;
 }
+.d-inline-block {
+  display: inline-block;
+}
 .d-grid {
   display: grid;
 }
@@ -298,6 +312,9 @@
 }
 .ai-center {
   align-items: center;
+}
+.ai-stretch {
+  align-items: stretch;
 }
 .justify-between {
   justify-content: space-between;
@@ -371,14 +388,21 @@
 /*end font*/
 
 /*start width*/
+
 .width-15 {
   width: 15px;
+}
+.width-32 {
+  width: 32px;
 }
 .width-35 {
   width: 35px;
 }
 .width-40 {
   width: 40px;
+}
+.width-52 {
+  width: 52px;
 }
 .width-60 {
   width: 60px;
@@ -404,6 +428,9 @@
 .height-5 {
   height: 5px;
 }
+.height-32 {
+  height: 32px;
+}
 .height-50 {
   height: 50px;
 }
@@ -421,6 +448,9 @@
 }
 .full-width {
   width: 100%;
+}
+.full-height {
+  height: 100%;
 }
 /*end width*/
 
@@ -469,6 +499,30 @@
 .bg-blue-color-light {
   background-color: var(--blue-color-light);
 }
+.bg-twitter-color {
+  background-color: var(--twitter-color);
+}
+.bg-twitter-color-light {
+  background-color: var(--twitter-color-light);
+}
+.bg-linked-in-color {
+  background-color: var(--linked-in-color);
+}
+.bg-linked-in-color-light {
+  background-color: var(--linked-in-color-light);
+}
+.bg-youtube-color {
+  background-color: var(--youtube-color);
+}
+.bg-youtube-color-light {
+  background-color: var(--youtube-color-light);
+}
+.bg-facebook-color {
+  background-color: var(--facebook-color);
+}
+.bg-facebook-color-light {
+  background-color: var(--facebook-color-light);
+}
 .bg-orange-color {
   background-color: var(--orange-color);
 }
@@ -505,6 +559,19 @@
 .c-red {
   color: var(--red-color);
 }
+.c-facebook {
+  color: var(--facebook-color);
+}
+.c-twitter {
+  color: var(--twitter-color);
+}
+.c-youtube {
+  color: var(--youtube-color);
+}
+.c-linked-in {
+  color: var(--linked-in-color);
+}
+
 /*end color and background*/
 /*start transition*/
 .trans {
