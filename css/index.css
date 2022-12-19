@@ -393,7 +393,7 @@ nav .icons i::after {
   height: 14px;
   border: 2px solid var(--grey-color);
   border-radius: 4px;
-  margin-right: 15px;
+  margin-right: 10px;
   transition: var(--main-transition-duration);
 }
 .widgets-control .control label:hover::before {
@@ -421,3 +421,64 @@ nav .icons i::after {
   transform: scale(1) rotate(0deg);
 }
 /*end widgets control*/
+/*start backup manager*/
+.backup-manager .time-frame-container .time-frame input[type='radio'] {
+  display: none;
+  --webkit-appearance: none;
+  appearance: none;
+}
+.backup-manager .time-frame-container .time-frame label::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--grey-color);
+  display: inline-block;
+  border-radius: 50%;
+  transition: var(--main-transition-duration);
+}
+.backup-manager .time-frame-container .time-frame label:hover::before {
+  border-color: var(--blue-color);
+}
+/* TODO : center the circle */
+.backup-manager .time-frame-container .time-frame label::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  left: 5px;
+  transform: scale(0);
+  transition: var(--main-transition-duration);
+}
+.backup-manager
+  .time-frame-container
+  .time-frame
+  input[type='radio']:checked
+  + label::after {
+  transform: scale(1);
+}
+.backup-manager
+  .time-frame-container
+  .time-frame
+  input[type='radio']:checked
+  + label::before {
+  border-color: var(--blue-color);
+}
+
+.backup-manager .server-type-container .server-type input[type='radio'] {
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.backup-manager
+  .server-type-container
+  .server-type:has(input[type='radio']:checked) {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
+.backup-manager .server-type-container .server-type label:hover {
+  color: var(--blue-color);
+}
+
+/*end backup manager*/

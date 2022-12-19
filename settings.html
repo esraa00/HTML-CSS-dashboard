@@ -330,6 +330,74 @@
             </div>
           </section>
           <!--end widgets control-->
+          <!--start backup manager-->
+          <section class="backup-manager bg-white rad-10 p-20">
+            <h2 class="mb-10">Backup Manager</h2>
+            <span class="fs-15 c-grey">Control Backup Time And Location</span>
+            <div
+              class="time-frame-container mt-20 d-flex flex-dir-col gap-10 border-bottom-lightest-grey"
+            >
+              <div class="time-frame">
+                <input type="radio" id="daily" name="time-frame" checked />
+                <label
+                  class="d-flex ai-center gap-10 relative cursor-pointer"
+                  for="daily"
+                  >Daily</label
+                >
+              </div>
+              <div class="time-frame">
+                <input type="radio" id="weekly" name="time-frame" />
+                <label
+                  class="d-flex ai-center gap-10 relative cursor-pointer"
+                  for="weekly"
+                  >Weekly</label
+                >
+              </div>
+              <div class="time-frame mb-20">
+                <input type="radio" id="monthly" name="time-frame" />
+                <label
+                  class="d-flex ai-center gap-10 relative cursor-pointer"
+                  for="monthly"
+                  >Monthly</label
+                >
+              </div>
+            </div>
+            <div
+              class="server-type-container mt-20 d-flex gap-10 flex-dir-col-mobile"
+            >
+              <div class="server-type border-grey p-15 rad-6 flex-1 trans">
+                <input type="radio" name="server-type" id="megaman" checked />
+                <label
+                  class="d-flex flex-dir-col ai-center gap-10 trans cursor-pointer"
+                  for="megaman"
+                >
+                  <i class="fa-solid fa-server"></i>
+                  <span>Megaman</span>
+                </label>
+              </div>
+              <div class="server-type border-grey p-15 rad-6 flex-1 trans">
+                <input type="radio" name="server-type" id="zero" />
+                <label
+                  class="d-flex flex-dir-col ai-center gap-10 trans cursor-pointer"
+                  for="zero"
+                >
+                  <i class="fa-solid fa-server"></i>
+                  <span>Zero</span>
+                </label>
+              </div>
+              <div class="server-type border-grey p-15 rad-6 flex-1 trans">
+                <input type="radio" name="server-type" id="sigma" />
+                <label
+                  class="d-flex flex-dir-col ai-center gap-10 trans cursor-pointer"
+                  for="sigma"
+                >
+                  <i class="fa-solid fa-server"></i>
+                  <span>Sigma</span>
+                </label>
+              </div>
+            </div>
+          </section>
+          <!--end backup manager-->
         </div>
         <!--end settings wrapper -->
       </div>
