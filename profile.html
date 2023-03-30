@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts for open sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- normalize css styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- framework -->
+    <link rel="stylesheet" href="./css/framework.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar p-20 bg-white relative">
+        <h3 class="sidebar-title ta-center mt-0 relative">Esraa</h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="d-flex ai-center fs-14 p-10 c-black rad-6 transition mb-5"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="ml-10 hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="ml-10 hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="active d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="ml-10 hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="ml-10 hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="ml-10 hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-solid fa-user-group fa-fw"></i>
+              <span class="ml-10 hide-mobile">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="ml-10 hide-mobile">Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="d-flex ai-center p-10 c-black fs-14 rad-6 transition mb-5"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="ml-10 hide-mobile">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content full-width mb-20">
+        <!--start heading-->
+        <nav class="bg-white between-flex p-15">
+          <div class="search relative">
+            <input
+              class="border-grey rad-10 ml-5 p-10 pl-30 fs-13"
+              placeholder="Type A Keyword"
+              type="search"
+            />
+          </div>
+          <div class="icons d-flex ai-center">
+            <i class="fa-regular fa-bell fa-xl relative" notifications="3"></i>
+            <img src="./images/avatar.png" class="width-35 ml-15" alt="" />
+          </div>
+        </nav>
+        <!--end heading-->
+        <!-- start  main title -->
+        <h1 class="relative main-title ml-20 mt-20 mb-40 mr-20">Profile</h1>
+        <!-- end main title -->
+        <!--start settings wrapper -->
+        <div class="profile-wrapper m-20">
+          <div class="overview bg-white rad-10 d-flex ai-center flex-dir-col-mobile">
+            <div class="avatar d-flex flex-dir-col ai-center gap-10" style="width: 300px;">
+              <img src="./images/avatar.png" class="rad-50" style="height: 120px; width: 120px;">
+              <h3 class="fs-bold">Esraa Mohamed</h3>
+              <p class="c-grey">Level 20</p>
+              <div class="bg-lightest-grey height-5 rad-6 hide-overflow" style="width: 70%;">
+                <div class="bg-blue-color rad-6" style="width:60%; height: 100%;"></div>
+              </div>
+              <div>
+                <i class="fa-solid fa-star fs-13 c-orange"></i>
+                <i class="fa-solid fa-star fs-13 c-orange"></i>
+                <i class="fa-solid fa-star fs-13 c-orange"></i>
+                <i class="fa-solid fa-star fs-13 c-orange"></i>
+                <i class="fa-solid fa-star fs-13 c-orange"></i>
+              </div>
+              <p class="c-grey fs-13">550 Rating</p>
+            </div>
+            <div class="info">
+              <!-- start general information row-->
+              <div class="general-info border-bottom-lightest-grey p-20 d-flex flex-wrap trans">
+                <h4 class="c-grey fs-15 full-width">General Information</h4>
+                <div class="info-wrapper d-flex flex-wrap ai-center" style="min-width: 200px;">
+                  <div class="info-box fs-14">
+                    <label for="full-name" class="c-grey fs-bold">Full Name</label>
+                    <span id="full-name">Esraa Mohamed</span>
+                  </div>
+                  <div class="info-box fs-14">
+                    <label for="gender" class="c-grey fs-bold">Gender</label>
+                    <span id="gender">Female</span>
+                  </div>
+                  <div class="info-box fs-14">
+                    <label for="country" class="c-grey fs-bold">Country</label>
+                    <span id="country">Egypt</span>
+                  </div>
+                  <label class="pt-10">
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- end general information row -->
+              <!-- start personal information row -->
+              <div class="personal-info border-bottom-lightest-grey p-20 d-flex flex-wrap trans">
+                <h4 class="c-grey fs-15 full-width">Personal Information</h4>
+                <div class="info-wrapper d-flex flex-wrap ai-center" style="min-width: 200px;">
+                  <div class="info-box fs-14">
+                    <label for="email" class="c-grey fs-bold">Email</label>
+                    <span id="email">esraa.abodeif1@gmail.com</span>
+                  </div>
+                  <div class="info-box fs-14">
+                    <label for="phone" class="c-grey fs-bold">Phone</label>
+                    <span id="phone">01270304453</span>
+                  </div>
+                  <div class="info-box fs-14">
+                    <label for="date-of-birth" class="c-grey fs-bold">Date of birth</label>
+                    <span id="date-of-birth">26/12/2000</span>
+                  </div>
+                  <label class="pt-10">
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- end personal information row -->
+              <!-- start job infromation row -->
+              <div class="job-info border-bottom-lightest-grey p-20 d-flex flex-wrap trans">
+                <h4 class="c-grey fs-15 full-width">Job Information</h4>
+                <div class="info-wrapper d-flex flex-wrap ai-center" style="min-width: 200px;">
+                  <div class="info-box fs-14">
+                    <label for="title" class="c-grey fs-bold">Title</label>
+                    <span id="tite">Software Engineer</span>
+                  </div>
+                  <div class="info-box fs-14">
+                    <label for="programming-language" class="c-grey fs-bold">Programming Language</label>
+                    <span id="programming-language">Javascript</span>
+                  </div>
+                  <div class="info-box fs-14">
+                    <label for="years-of-experience" class="c-grey fs-bold">Years of experience</label>
+                    <span id="years-of-experience">1+</span>
+                  </div>
+                  <label class="pt-10">
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- end job infromation row -->
+              <!-- start billing infromation row -->
+              <div class="billing-info border-bottom-lightest-grey p-20 d-flex flex-wrap trans">
+                <h4 class="c-grey fs-15 full-width">Billing Information</h4>
+                <div class="info-wrapper d-flex flex-wrap ai-center" style="min-width: 200px;">
+                  <div class="info-box fs-14">
+                    <label for="title" class="c-grey fs-bold">Payment Method</label>
+                    <span id="tite">Paypal</span>
+                  </div>
+                  <div class="info-box fs-14">
+                    <label for="programming-language" class="c-grey fs-bold">Email</label>
+                    <span id="programming-language">esraa.abodeif1@gmail.com</span>
+                  </div>
+                  <div class="info-box fs-14">
+                    <label for="years-of-experience" class="c-grey fs-bold">Subscription</label>
+                    <span id="years-of-experience">Permium</span>
+                  </div>
+                  <label class="pt-10">
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- end job infromation row -->
+            </div>
+          </div>
+        </div>
+  </body>
+</html>

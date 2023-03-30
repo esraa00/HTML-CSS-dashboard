@@ -365,7 +365,6 @@ nav .icons i::after {
     gap: 10px;
   }
 }
-/*end settings page*/
 /*start security info*/
 .security-info .password a:hover {
   background-color: var(--blue-alt-color);
@@ -480,5 +479,22 @@ nav .icons i::after {
 .backup-manager .server-type-container .server-type label:hover {
   color: var(--blue-color);
 }
-
 /*end backup manager*/
+/*end settings page*/
+@media (min-width: 767px) {
+  .profile-wrapper .overview .avatar {
+    border-right: 1px solid var(--lighter-grey-color);
+  }
+}
+
+.profile-wrapper .overview .info > div:hover {
+  background-color: #f9f9f9;
+}
+
+@media (min-width: 767px) {
+  .profile-wrapper .overview .info > div .info-wrapper .info-box {
+    min-width: 300px;
+    padding-top: 10px;
+  }
+}
+/*start profile page*/
